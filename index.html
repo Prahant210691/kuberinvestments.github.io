@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KuberInvestment</title>
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="assets/css/owl.carousel.min.css" rel="stylesheet" >
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style type="text/css">
+    .banner-slider .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.banner-slider .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.banner-slider .banner-text {
+    width: 100%;
+    max-width: 520px;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.banner-text .banner-cta:not(:first-child) {
+    margin-top: 25px;
+}
+.banner-text .btn {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem!important;
+}
+.font-weight-bold {
+    font-weight: 700;
+}
+.devider, .devider-yellow, .devider-dark {
+    background: linear-gradient(90deg, #002e5b 50%, #f9b706 50%);
+    height: 7px;
+    width: 100px;
+    margin-bottom: 15px;
+    margin-left: auto!important;
+}
+.theme-border {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+.theme-border:before {
+    content: "";
+    border-top: 10px solid #f9b706;
+    border-left: 10px solid #f9b706;
+    border-right: 10px solid #f9b706;
+    width: 100%;
+    display: block;
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.theme-border img {
+    border: 10px solid transparent;
+}
+.theme-border:after {
+    content: "";
+    border-bottom: 10px solid #f9b706;
+    border-left: 10px solid #f9b706;
+    border-right: 10px solid #f9b706;
+    width: 100%;
+    display: block;
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.f-weight-black {
+    font-weight: 900;
+}
+
+.f-size-25 {
+    font-size: 25px;
+}
+.bg-image-loaded {
+    opacity: 1;
+}
+.imagebg {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    transition: opacity .4s;
+}
+.section-pad {
+    padding-top: 135px;
+    padding-bottom: 135px;
+}
+.bg-light, .box-s2 {
+    background: #f4f8f8;
+}
+.btn-link {
+    color: #24C9ED;
+    transition: all .4s ease-in-out;
+}
+.col-sm-offset-6 {
+    margin-left: 50%;
+}
+.who_we_are{
+  margin-bottom: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.li_class{
+      color: #063e75;
+    font-weight: 600;
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+  display: block;
+}
+.owl-prev{
+  position: absolute;
+  top: 50%;
+  left: -125px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: none;
+  border: 0;
+  padding: 0;
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  border: 1px solid #a6b4bb !important;
+  -webkit-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  -ms-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+.owl-prev span{
+  font-size: 40px;
+  line-height: 16px;
+  color: #a6b4bb;
+}
+.owl-next{
+  position: absolute;
+  top: 50%;
+  right: -125px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: none;
+  border: 0;
+  padding: 0;
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  border: 1px solid #a6b4bb !important;
+  -webkit-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  -ms-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+.owl-next span{
+  font-size: 40px;
+  line-height: 16px;
+  color: #a6b4bb;
+}
+.icon-box {
+    text-align: center;
+    padding: 15px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #f3f3f3;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.icon-box .icon {
+    margin-bottom: 10px;
+    border: none;
+    color: #f9b706;
+    text-align: center;
+    font-size: 23px;
+}
+.icon-box .icon i {
+    font-size: 28px;
+}
+.icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.icon-box h4 a {
+    color: #002e5b;
+    transition: ease-in-out 0.3s;
+    font-size: 15px;
+    cursor: pointer;
+}
+.mission_vision{
+
+}
+.mission_vision label {
+    font-weight: 900;
+    color: #012970;
+    text-transform: uppercase;
+}
+.mission_vision p {
+    margin: 5px 0 30px 0;
+}
+
+
+.container2 {
+    width: 100%;
+    height: auto;
+    padding: 0%;
+}
+.iconDetails {
+    margin-left: 0%;
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+.container2 h4 {
+    font-size: 22px !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f2e283 !important;
+    margin-top: 3px;
+    text-transform: uppercase;
+    line-height: 83px;
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+}
+
+@media(max-width: 480px){
+  .container2 h4{
+    line-height: 23px;
+    font-size: 20px !important;
+    padding: 19px 0px !important;
+  }
+  .footer .footer-top .footer-info {
+    margin-bottom: 5px;
+  }
+}
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="images/logo_img.png" alt="">
+        <span class="for_desktop">Kuber Consultancy Group</span>
+        <span class="for_mobile">KCG</span>
+      </a>
+    <!-- .navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#about">Services</a></li>          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ======= Home Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 d-flex flex-column justify-content-center">
+          <!-- <div class="Best_Seller_section owl-carousel owl-theme"> -->
+                <div class="item">
+                      <div class="banner-content">
+                        <div class="container">
+                          <div class="row">
+                            <div class="banner-text al-left pos-left dark">
+                              <div class="animated fadeInRight">
+                                <h1 data-aos="fade-up" data-aos-delay="400"><strong class="color-heading">We help to boost your  financial situation</strong></h1>
+                                <p data-aos="fade-up" data-aos-delay="600">We all have financial goals and dreams but most of us don't have any passive income which will help to achieve financial goals. We are here to make it possible.</p>
+                                <div class="banner-cta" data-aos="fade-up" data-aos-delay="800">
+                                  <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Contact Us</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            <!-- </div>          -->
+        </div>       
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+ <!-- ======= Features Section ======= -->
+  <main id="main">
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center pb-4">
+                    <div class="heading">
+                        <h3 class="text-uppercase font-weight-bold" style="color: #f9b706;"> Welcome To Kuber Consultancy </h3>
+                        <div class="devider mx-auto"></div>
+                        <p>We work hard in our life for money but what if our money start working for us?<br> So, let’s start our journey from dreams to reality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12 col-12 col-lg-4 pb-5 pb-lg-0 ">
+                    <span class="theme-border"><img src="images/user.png" alt="" class="img-fluid"></span>
+                    <h4 class="my-3 text-uppercase f-weight-black f-size-25"> Best Consulting </h4>
+                    <p>As we are experts in stock market and forex market, We counsult as per our great experience. </p>
+                </div>
+                <div class="col-md-12 col-12 col-lg-4 pb-5 pb-lg-0">
+                    <span class="theme-border"><img src="images/rocket.png" alt="" class="img-fluid"></span>
+                    <h4 class="my-3 text-uppercase f-weight-black f-size-25"> FUND MANAGER </h4>
+                    <p> we manage your fund by investing in different scripts and try to make safe and good returns with proper money management and risk management. </p>
+                </div>
+
+                <div class="col-md-12 col-12 col-lg-4">
+                    <span class="theme-border"><img src="images/mind.png" alt="" class="img-fluid"></span>
+                    <h4 class="my-3 text-uppercase f-weight-black f-size-25"> STOCKS & FOREX EXPERTS </h4>
+                    <p> We analyse the market with technical and fundamental analysis and find out best scripts to trade and invest. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- ======= About us Section ======= -->
+    <section id="about" class="about" style="padding: 0px 0px;">
+      <div class="section section-contents section-pad bg-light has-bg-image" style="position: relative;padding-top: 50px;">
+        <div class="container">
+          <div class="content row">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-6" style="position: relative;z-index: 1;">
+                <h2 class="who_we_are">Who We Are</h2>
+                <p>We started this company to help those who are interested in investing but don’t have much time to analyze any stock or trade.</p>
+                <p>We thought that to use our trading skills to not only grow our financial condition but yours also. We noticed that banks are giving 6% to 7% returns yearly and mutual funds are giving 15% to 20% but market has better potential than these numbers.</p>
+                <p>A SIM is worthless without mobile and mobile is worthless without SIM just like that if we shake hands together, we both can grow and open the doors of our dreams.</p>
+
+
+                <div class="mission_vision">
+                  <label>Our Vision</label>
+                  <p>We are here to boost your Financial Situation and help you to achieve your dreams.</p>
+                </div>
+
+                <div class="mission_vision">
+                  <label>Our Mission</label>
+                  <p>Make the people financially strong by introducing our smart concept.</p>
+                </div>
+
+
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="imagebg bg-image-loaded" style="background-image: url('http://demo.themesurf.com/consulting/image/plx-light-side.jpg');">
+          <img src="image/plx-light-side.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+  <!-- ======= Service Section ======= -->
+
+
+    <!-- <section id="about" class="about" style="padding: 0px 0px;">
+      <div class="section section-contents section-pad bg-light has-bg-image" style="position: relative;padding-top: 50px;">
+        <div class="container">
+          <div class="content row">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-6" style="position: relative;z-index: 1;">
+                <h2 class="who_we_are">Service</h2>
+                <p>We manage your funds with proper risk management and money management and give you fix returns on monthly basis. 
+              We have investment plans starting from 1,00,000 and we give great returns in market.</p>
+              <p>Our first focus is to safe your funds and then make good returns even more than mutual funds.</p>
+
+              <ul style="margin-bottom: 0px;">
+                <li class="li_class"><i class="bi bi-arrow-right"></i> MINIMUM FUND – 50k</li>
+                <li class="li_class"><i class="bi bi-arrow-right"></i> LOCKING PERIOD – 12 months</li>
+                <li class="li_class"><i class="bi bi-arrow-right"></i> MAXIMUM FUND – NO CERTAIN LIMIT</li>
+                <li class="li_class"><i class="bi bi-arrow-right"></i> EXPECTED RETURNS – 6% </li>
+              </ul>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="imagebg bg-image-loaded" style="background-image: url('images/services_bg.png');">
+        </div>
+      </div>
+    </section> -->
+
+
+    <section>      
+      <div class="container">
+        <header class="section-header">  
+          <h2 class="services">Service</h2>    
+        </header>
+        <div class="content row">
+          <div class="">
+            <div class="col-sm-6" style="position: relative;z-index: 1;text-align: center;">             
+              <img src="images/services_img.png" style="width: 48%;">
+            </div>
+            <div class="col-sm-6" style="position: relative;z-index: 1;">             
+              <p>We manage your funds with proper risk management and money management and give you fix returns on monthly basis. 
+              We have investment plans starting from 1,00,000 and we give great returns in market.</p>
+              <p>Our first focus is to safe your funds and then make good returns even more than mutual funds.</p>
+
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="icon-box">
+                    <!-- <div class="icon"><i class="ri-hospital-line"></i></div> -->
+                    <div class="icon">1,00,000</div>
+                    <h4><a href="">MINIMUM FUND</a></h4>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="icon-box">
+                  <div class="icon">15 months</div>
+                  <h4><a href="">LOCKING PERIOD</a></h4>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="icon-box">
+                  <div class="icon">No Limit</div>
+                  <h4><a href="">MAXIMUM FUND</a></h4>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="icon-box">
+                  <div class="icon">As per plan</div>
+                  <h4><a href="">EXPECTED RETURNS</a></h4>
+                </div>
+                </div>
+               
+              </div>
+
+
+              <!-- <ul style="margin-bottom: 0px;">
+                <li class="li_class"><i class="bi bi-arrow-right"></i> MINIMUM FUND – 50k</li>
+                <li class="li_class"><i class="bi bi-arrow-right"></i> LOCKING PERIOD – 12 months</li>
+                <li class="li_class"><i class="bi bi-arrow-right"></i> MAXIMUM FUND – NO CERTAIN LIMIT</li>
+                <li class="li_class"><i class="bi bi-arrow-right"></i> EXPECTED RETURNS – 6% </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+          
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact" style="background: #f3f3f3;">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">          
+          <p>Contact Us</p>
+        </header>
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="row gy-4">
+              <!-- <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>A23 Sharada House,<br>Nippani, KA 591237</p>
+                </div>
+              </div> -->
+              <!-- <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 7019737117</p>
+                </div>
+              </div> -->
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contactus@kuberconsultancygroup.in" target="_blank">contactus@kuberconsultancygroup.in</a></p>
+                </div>
+              </div>
+              <!-- <div class="col-md-6">
+                <div class="">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>contactus@kuberconsultancygroup.in</p>
+                </div>
+              </div> -->
+              <!-- <div class="col-md-6">
+                <div class="">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>contactus@kuberconsultancygroup.in</p>
+                </div>
+              </div> -->
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday<br>9:00AM - 06:00PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="mail-handler.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <!-- <a href="index.html" class="logo d-flex align-items-center">
+              <img src="images/logo_img.png" alt="">
+              <span>Kuber Consultancy Group</span>
+            </a> -->
+
+            <a href="index.html">
+                <div class="container2">
+                  <div>
+                    <img src="images/logo_img.png" class="iconDetails">
+                  </div>  
+                  <div style="margin-left:87px;">
+                    <h4>Kuber Consultancy Group</h4>
+                  </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+            </ul>
+          </div>
+
+          <!-- <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Photo Shoots</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Wedding Photography</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Food Photography</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Product Photography</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Makeup Shoot</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-lg-3 col-md-12 footer-contact text-md-start">
+            <h4>Contact Us</h4>
+            <p class="for_desktop">
+              <!-- A23 Sharada House <br>
+              Nippani, KA 591237<br>
+              India<br><br> -->
+              <!-- <strong>Phone:</strong> +91 7019737117<br> -->
+              <strong>Email:</strong> contactus@kuberconsultancygroup.in<br>
+            </p>
+            <p class="for_mobile">
+              <!-- A23 Sharada House  Nippani, KA 591237 India <br><br> -->
+              <!-- <strong>Phone:</strong> +91 7019737117<br> -->
+              <strong>Email:</strong>contactus@kuberconsultancygroup.in<br>
+            </p>
+            <!-- <div class="social-links mt-3 for_mobile">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>KuberConsultancyGroup</span></strong>. All Rights Reserved
+      </div>         
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.Best_Seller_section.owl-carousel').owlCarousel({
+          loop:true,
+          items: 6,
+          navigation:true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          margin:20,
+          autoplayHoverPause: true,
+          dots: true,
+          responsive: {
+              0: {
+                  items: 1,
+              },
+              768: {
+                  items: 1,
+              },
+              991: {
+                  items: 1,
+              },
+          }
+      });
+    });
+      
+  </script>
+
+</body>
+
+</html>
