@@ -851,7 +851,7 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../images/h1_hero.jpg) top center no-repeat;
+  background: url('../img/banner_img.jpg') top center no-repeat;
 /*  background: url('https://preview.colorlib.com/theme/consultingbiz/assets/img/hero/xh1_hero.jpg.pagespeed.ic.KANJPDPqHT.jpg') top center no-repeat;*/
   background-size: cover;
 }
